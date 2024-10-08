@@ -1,10 +1,86 @@
+<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>game</title>
-</head>
-<body>
-    <h1>this is game </h1>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content=" This Is Description For Project 7" />
+
+    <title>drag-game_2</title>
+    <link rel="shortcut icon" href="./media/images/pray.svg" type="image/x-icon">
+    <!--Bootstrap File-->
+    <link rel="stylesheet" href="./styles/bootstrap.min.css" />
+    <!--Main Css File-->
+    <link rel="stylesheet" href="./styles/main.css?cvdfaf" />
+    <!--Icons Library-->
+    <link rel="stylesheet" href="./styles/all.min.css" />
+
+<!--interact library-->
+<script src="https://cdn.jsdelivr.net/npm/interactjs/dist/interact.min.js"></script>
+
+
+  </head>
+
+  <body >
+    <div class="fullscreen-overlay">
+      <h1 class="message">duble click to start the game</h1>
+    </div>
+
+    <div class="pop-overlay"></div>
+    <div
+      class="popup d-flex flex-column justify-content-center align-items-center gap-3 rotate-phone"
+    >
+      <div class="message">flip the device to play</div>
+      <div class="phone"></div>
+    </div>
+    <div class="loader-container">
+      <div class="loader">
+       
+      </div>
+      
+    </div>
+
+
+    
+
+    <div class="game flex-column justify-content-between main-container " >
+      <div class="game-item">
+        <div class="main-title"></div>
+        <div class="sub-title"></div>
+        <div class="image-container">
+          <div class="drop-item" data="t"></div>
+        </div>
+        <div class="drag-main-container">
+          <div class="drag-container">
+            <div draggable="true" class="drag-item">
+              <span></span>
+            </div>
+            <div  draggable="true" class="drag-item">
+              <span></span>
+            </div>
+            <div draggable="true" class="drag-item">
+              <span></span>
+            </div>
+          </div>
+        </div>
+        <div class="main-message-container" >
+          <div class="inner-message-container">
+          <span id="message-icone" ></span>
+          <span id="feedback"></span>
+          <span class="result-text">النتيجة</span>
+          <div class="result-container">
+          <span></span>
+          </div>
+          <a class="reload"></a>
+          </div>
+          </div>
+      </div>
+    </div>
+
+
+
+
+    <script type="module" src="./JS/script.js" class="script" async></script>
+    
+  </body>
 </html>
